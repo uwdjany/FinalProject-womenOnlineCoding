@@ -4,8 +4,8 @@ import { sliderData  } from "./slider-data";
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@ant-design/icons";
 import './style.css'
 
-
-
+import About from "../About";
+import Nav from "../../component/navbar";
 
 const Slider = () =>{
     
@@ -45,6 +45,8 @@ function auto(){
     
     
     return(
+        <>
+        <Nav/>
         <div className="slide">
         <ArrowLeftOutlined className="arrow prev" onClick={prevSlide}/>
         <ArrowRightOutlined className="arrow next" onClick={nextSlide}/>
@@ -75,7 +77,8 @@ function auto(){
          })}
 
        </div>
-       
+       <About/>
+       </>
 
        )
        
