@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    height: 100vh;
+    background-position:center center;
+    object-fit: cover;
+}
+.content{
+    position: absolute;
+    top: 15rem;
+    left: 5rem;
+    opacity: 0; 
+    width: 55%;
+    padding: 2rem;
+    background: rgb(0, 0, 0, 0.3);
+    animation: slide-up 1s ease .5s;
+    animation-fill-mode: forwards;
+     /* visibility: hidden; */
+color:black;
+font-weight: 100;
+
+}
+@keyframes slide-up {
+    0%{
+        visibility: visible;
+        top: 23rem;
+    }
+    100%{
+        visibility: visible;
+        top: 17rem;
+    }
+    
+}
+.current{
+    opacity: 1;
+    transform: translateX(0);
+
+}
+.current .content{
+    opacity: 1;
+}
+
+.arrow{
+    border: 4px solid black ;
+    border-radius: 50%;
+    top: 50%;
+    background: transparent;
+    color: black;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    position: absolute;
+    z-index: 999;
+}
+.arrow:hover{
+    background: #fff;
+    color: #777;
+}
+.next{
+
+    right: 1.5rem;
+}
+.prev{
+
+
+    left: 1.5rem;
+}
+hr{
+    height: 2px;
+    background: #fff;
+    width: 50%;
+}
+.btn{
+    margin: 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 8px;
+    font-weight: 700;
+    background-color: rgb(211, 164, 25);
+    color: #fff;
+    box-shadow: rgb(90, 71, 13) 4px 4px 0px;
+    transition:  transform 200ms, box-shadow 200ms;
+    
+}
+.btn:hover{
+    background: transparent;
+    color: rgb(211, 164, 25) ;
+}
+/* 
+about component */
+
+.about-container{
+    display: flex;
+
+}
+/* .heading-one{
+    background-color: rgba(0,0,0,.9);
+    right: 50%;
+    font-size: 30px;
+ 
+    color: rgb(211, 164, 25);
+
+
+} */
+.about-img{
+    width: 50%;
+    height: 30%;
+}
+/* .heard-one{
+    background-color: rgba(0,0,0,.9);
+    text-align: center;
+    letter-spacing: 1px;
+    box-shadow: rgba(61, 60, 60, 0.19) 4px 4px 0px;
+    
+
+} */
+
+
+.about-container section{
+    width: 50%;
+    padding: 30px 80px;
+    flex-direction: column;
+
+}
+
+
+
+.icon-one{
+    color: rgb(211, 164, 25);
+    font-size: 70px;
+    margin-left: 50px;
+    
+    ;
+}
+.icons{
+    display: flex;
+}
+.paragraph{
+    margin-top: 40px;
+    
+}
+.para{
+font-size: 30px;
+}
+h4{
+    font-size: 30px;
+    margin-left:90px;
+    font-weight: 900;
+    margin-top: 20px;
+}
