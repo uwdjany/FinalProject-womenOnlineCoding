@@ -1,24 +1,19 @@
 
 import React from "react";
-import Slider from "./views/slider/home";
+import { BrowserRouter as Router } from "react-router-dom";
+import Routes from "./routes";
 
-//import Home from "./views/homepage";
-import Nav from "./component/navbar";
-import About from "./views/about";
-//import Footer from "./component/footer";
+// import AdminRoutes from './routes/admin'
+const App=()=>{
+    return(
+<Router>
+    <Routes></Routes>
 
-const App =()=>{
-  return(
-    <>
-    <Nav/>
-<Slider/>
-<About/>
-
-</>
-  
     
-   
-  )
+</Router>
+    );
 
-}
+    
+    
+};
 export default App;
