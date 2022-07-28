@@ -2,9 +2,9 @@ import React from 'react';
 import "./login.css";
 
 // import email from "../src/images/email.jpg";
-import profile from "../src/images/profile.png";
-import email from "../src/images/email.jpg";
-import pass from "../src/images/pass.jpg";
+import profile from "../assets/images/profile.png";
+import email from "../assets/images/email.jpg";
+import pass from "../assets/images/pass.jpg";
 function Login () {
   return (
     <div className="main">
