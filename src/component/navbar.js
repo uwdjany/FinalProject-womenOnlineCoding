@@ -39,10 +39,10 @@ window.addEventListener('scroll', changeColor)
 </header>
 
         <ul className="nav-links">
-        <li><a href="">Home</a></li>
+        <li><a href="/home">Home</a></li>
         <li><a href>About Us</a></li>
         <li><a href>Tutorials</a></li>
-        <li><a href>Login</a></li>
+        <li><a href="/login">Login</a></li>
         <li><a href>Videos</a></li>
         <li><a href>Contact Us</a></li>
         <li className="apply-btn"><a href>Apply Now</a></li>
