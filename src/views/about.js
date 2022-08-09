@@ -1,7 +1,7 @@
 import React from "react";
 import image from "../assets/images/online.png"
 import { EyeFilled , BulbFilled} from "@ant-design/icons";
-
+import './about.css'
 const About =()=>{
     return(
         <>
@@ -34,6 +34,7 @@ const About =()=>{
         
         </p>
         <h6 className="para">Our Vision </h6>
+        
         <p className="paragraph">Bringing opportunity to attain excellent < br />
          education, anytime anywhere</p>
         

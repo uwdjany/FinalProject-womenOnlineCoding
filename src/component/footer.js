@@ -1,94 +1,86 @@
 import React from 'react';
-import './footer.css'
+import './footer.css';
 
 import {
-    FacebookOutlined,
-    TwitterOutlined,
-    InstagramOutlined,
+  FacebookOutlined,
+TwitterOutlined,
+MailOutlined,
+LinkedinOutlined,
+
+  
 } from  "@ant-design/icons"
 
-//import "./footer.css";
-
-
-
-
 const Footer =()=>{
-    const date =new Date();
-    let year =date.getFullYear();
+  
+  const date =new Date();
+  let year =date.getFullYear();
     return(
-        
-        <div className='footer-container'>
-          <div className='logo-column'>
-            
-                  <div className='icons'>
-                      <FacebookOutlined/>
-                      <TwitterOutlined/>
-                      <InstagramOutlined/>
-                      
-                  </div>
-                  <p className='copyright'>
-                      {" "}
-                      copyright &copy;{year} by Djanati Uwase,
-                      <span>Inc.All rights reserved</span>
+
+      <footer className='footer-cont'>
+      <div className='container'>
+      <div className='row'>
+      <div className='footer-col'>
+      <h5>Links</h5>
+      <ul>
+      
+<li><a href=''>home</a></li>
+<li><a href=''>About</a></li>
+<li><a href=''>Tutorials</a></li>
+
+      
+      </ul>
+      
+      </div>
+      
+      <div className='footer-col'>
+<h5>USEFUL LINKS</h5>
+<ul>
+
+<li><a href=''>Are you mentor? <span className='links'>Patern with us</span></a></li>
+<li><a href=''>Are you trainee? <span className='links'>Login In</span></a></li>
+<li><a href=''>want become programmer? <span className='links'>Apply Now</span></a></li>
 
 
-                  </p>
+</ul>
 
-          </div>
-
-
-
-
-
-        
-
-
-          <div className='contactus-column'>
-              <h3 className='footer-title'>Contact-Us</h3>
-              <p>653 kacyiru St., 2nd floor , <span>Kigali Rwanda</span>
-
-              </p>
-              <p>
-                  <a href='tel:0784875125'>0784875125</a>
-                  </p>
-                <p>
-                  <a href='email:djanatiuwase@gmail.com'>djanatiuwase@gmail.com</a>
-              </p>
-             
-          </div>
-
-          <div className='acountus-column'>
-              <h3 className='footer-title'>Create Account</h3>
-              <p><a href='#'>Sign In </a></p>
-              <p><a href='#'>Career </a></p>
-              <p><a href='#'>Campany </a></p>
-          </div>
-
-          <div className='campany-column'>
-              <h3 className='footer-title'>campany</h3>
-              <p><a href='#'>About Me </a></p>
-              <p><a href='#'>Career </a></p>
-              <p><a href='#'>Campany </a></p>
-          </div>
-          <div className='campany-column'>
-              <h3 className='footer-title'>Resources</h3>
-              <p><a href='#'>About Resources </a></p>
-              <p><a href='#'>Career </a></p>
-              <p><a href='#'>Campany </a></p>
-          </div>
-
-          
-        </div>
-
-
-
-
-        
+</div>
 
 
 
 
 
-    );
-};
-export default Footer;
+<div className='footer-col'>
+<h5>CONTACT US</h5>
+<div className="social-icons">
+<a href='' className='icon-s'><FacebookOutlined/></a>
+<a href='' className='icon-s'> <TwitterOutlined/> </a>
+<a href='' className='icon-s'><MailOutlined/></a>
+<a href='' className='icon-s'><LinkedinOutlined/></a>
+</div>
+
+</div>
+
+
+
+
+      </div>
+      
+      </div>
+      <header className='copy-container'>
+      <p className='copyright'>
+      {" "}
+      copyright &copy;{year} by &nbsp;LadiesInCode,&nbsp;&nbsp;
+      <span className='copy'>Inc.All rights reserved</span>
+
+
+  </p>
+      
+      </header>
+      </footer>
+      
+      
+    )
+
+}
+
+export default Footer

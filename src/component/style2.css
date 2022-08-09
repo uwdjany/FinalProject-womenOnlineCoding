@@ -54,7 +54,7 @@ h1{
     
 }
 span{
-    color: white;
+    color: #f7941e ;
     font-weight: 900;
     margin-top: 5px;
     
@@ -65,7 +65,7 @@ span{
     height: 50px;
 }
 .apply-btn{
-    background-color:white;
+    background-color:#f7941e ;
     color: black ;
     font-size: 10px;
     padding: 6px 35px;
@@ -82,8 +82,13 @@ span{
 }
 .apply-btn:hover{
     color: whi;
-    background-color:rgb(211, 164, 25)  ;
+    background-color:#f7941e ;
 }
 
 /* 
 About container */
+.nav-links li a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
