@@ -1,5 +1,7 @@
 import React from 'react';
 import "./login.css";
+import Signin from '../component/Signin';
+import FormInput from '../component/FormInput';
 
 // import email from "../src/images/email.jpg";
 import profile from "../assets/images/profile.png";
@@ -13,6 +15,7 @@ function Login () {
        <div className="imgs">
         <div className="container-image">
           <img src={profile} alt="profile" className="profile"/>
+          {/* <img src={}></> */}
 
     </div>
 
@@ -34,7 +37,7 @@ function Login () {
     
 
     <p className='linn'>
-      <a href='#'>Forgot password ?</a> or <a href="#">Sign up </a>
+      <a href="Signin">Forgot password ?</a> or <a href="/Signin">Sign up </a>
     </p>
 
 
