@@ -1,0 +1,62 @@
+/* 
+about component */
+
+.about-container{
+    display: flex;
+
+}
+/* .heading-one{
+    background-color: rgba(0,0,0,.9);
+    right: 50%;
+    font-size: 30px;
+ 
+    color: rgb(211, 164, 25);
+
+
+} */
+.about-img{
+    width: 50%;
+    height: 30%;
+}
+/* .heard-one{
+    background-color: rgba(0,0,0,.9);
+    text-align: center;
+    letter-spacing: 1px;
+    box-shadow: rgba(61, 60, 60, 0.19) 4px 4px 0px;
+    
+
+} */
+
+
+.about-container section{
+    width: 50%;
+    padding: 0px 80px;
+    flex-direction: column;
+
+}
+
+
+
+.icon-one{
+    color:#f7941e;
+    font-size: 70px;
+    margin-left: 50px;
+    
+    ;
+}
+.icons{
+    display: flex;
+}
+.paragraph{
+    /* margin-top: 40px; */
+    
+}
+.para{
+font-size: 20px;
+}
+h4{
+    font-size: 30px;
+    margin-left:90px;
+    font-weight: 900;
+    margin-top: 20px;
+}

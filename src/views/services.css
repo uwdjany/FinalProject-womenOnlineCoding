@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    margin-top: 10%;
+    margin-left: 20%;
+   
+}
+.wrapper h1{
+
+}
+.team{
+    display: flex;
+    text-align: center;
+    width: auto;
+    flex-wrap: wrap;
+}
+.team .team_member{
+    background-color: #777;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 250px;
+    padding:20px;
+    line-height: 20px;
+    color: #8c8b8b;
+    position: relative;
+    height: 150px;
+
+
+}
+
+.wrapper-h{
+    text-align: center;
+    
+    font-size: 32px;
+     margin-top: 60px; 
+     text-transform: uppercase;
+ 
+    
+    
+}
+.head-wrap{
+  margin-right: 40%;
+    
+}
+.team .team_member h3{
+    color: rgba(203, 203, 1, 0.912);
+    font-size: 26px;
+    margin-top: 50px;
+
+
+}
+.team .team_member p .role{
+    color: #ccc;
+    font-size: 12px;
+    text-transform: capitalize;
+    margin: 12px 0;
+    
+}
+.team .team_member .team_icons{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute; 
+
+    background-color:#f7941e ;
+    color: rgb(211, 164, 25)  ;
+    border: solid whitesmoke  2px;
+    
+}
+.team_icons:hover{
+    background: transparent;
+
+}
+  .iconic{
+    font-size: 30px;
+    color:whitesmoke  ;
+  }
+  .paragraph-bx{
+    margin-top: 20%;
+    color: black;
+  }
+  .top-btn-position{
+    position: fixed;
+    bottom: 15px;
+    left:20px ;
+  }

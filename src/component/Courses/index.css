@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-course{
+    text-align: center;
+    margin-right: 40%;
+    margin-top: 30px;
+    display:flex;
+   
+}
+.video-container{
+   width: 50%;
+   height: 50%;
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import "./login.css";
 import Signin from '../component/Signin';
 import FormInput from '../component/FormInput';
-
+ import "./login.css";
 // import email from "../src/images/email.jpg";
 import profile from "../assets/images/profile.png";
 import email from "../assets/images/email.jpg";
@@ -10,19 +10,22 @@ import pass from "../assets/images/pass.jpg";
 function Login () {
   return (
     <div className="main">
-      <div className="sub-main">
+      <div className="login-content">
        <div>
        <div className="imgs">
         <div className="container-image">
           <img src={profile} alt="profile" className="profile"/>
+
           {/* <img src={}></> */}
 
     </div>
-
+  
     
     </div>
+    <h3 className='heading-lg'>Login page</h3>
     </div>
- <h1>Login page</h1>
+  
+
   <div>
   <img src={email} alt="email" className='email'/>
   <input type="text" placeholder=' email' className='name'   />

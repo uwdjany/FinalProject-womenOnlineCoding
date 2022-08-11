@@ -3,11 +3,11 @@ import "./Signin.css"
 import FormInput from "./FormInput";
 
 
-
 const Signin = () => {
 const [values,setValues] = useState({
  
   
+    
 username: "",
 email : "",
 birthday: "",
