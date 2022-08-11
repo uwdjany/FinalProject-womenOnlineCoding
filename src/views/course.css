@@ -1,0 +1,117 @@
+:root{
+    --primary:linear-gradient(to bottom right, #555,black);
+    --secondary:gold;
+    --text:#fff;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box ;
+}
+.body-bg{
+    min-height: 100vh;
+    background-image: var(--primary);
+    font-family: sans-serif;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+ } 
+.container-course{
+    width:100vw;
+    display: grid;
+    grid-template-columns: 1.8fr 1.1fr;
+    gap: 1rem;
+    padding: .5rem 1rem;
+    text-transform: capitalize; 
+
+
+}
+
+
+
+.main-video video{
+
+    width: 100%;
+    border-radius: 5rem;
+
+}
+.video img{
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    filter:invert(100%);
+
+
+
+}
+.main-video ,.video-playlist{
+    width: 100%;
+    height: 30rem;
+     
+     
+    
+}
+.main-video .title-course{
+    margin-top: 1rem;
+
+}
+.video-playlist > p{
+    padding: 1rem;
+    color: var(--secondary);
+}
+.video-playlist .videos{
+    height: 70%;
+    overflow-y: auto;
+}
+.video-playlist .videos .videos::-webkit-scrollbar {
+    width: .4rem;
+    border-radius: .4rem;
+    background-color: #0005 ;
+}
+.video-playlist .videos .videos::-webkit-scrollbar-thumb   {
+    width: .4rem;
+ 
+    background-color: #ffff ;
+}
+
+.video-playlist .videos .video{
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    cursor: pointer;
+    border-radius: 5rem;
+}
+.video-playlist .videos .video:hover{
+    background-color: #0003;
+}
+.video-playlist .videos .video.active{
+    background-color: #0003;
+    color: var(--secondary);
+}
+.video h6{
+
+    width: 20rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font: 100 1rem sans-serif;
+    padding: 0 .5rem ;
+}
+.video p{
+
+    margin-left: 2.5rem;
+}
+.video-playlist .videos .video.active img{
+    filter:invert(100%) sepia(100%) saturate(2000%) hue-rotate(360deg);
+ 
+}
+.video-playlist{
+    margin-right: 50%;
+}

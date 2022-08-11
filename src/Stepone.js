@@ -1,26 +1,26 @@
 
-import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+// import React from "react";
+// import { BrowserRouter as Router } from "react-router-dom";
 
-import Route from "./routes/applyroute";
-import StepContext from "./views/ApplyNow/StepContex";
+// import Route from "./routes/applyroute";
+// import StepContext from "./views/ApplyNow/StepContex";
 
-const Stepone=()=>{
-    return(
-        <>
-        <StepContext>
+// const Stepone=()=>{
+//     return(
+//         <>
+//         <StepContext>
         
-        <Route></Route>
-        </StepContext>
+//         <Route></Route>
+//         </StepContext>
        
     
    
         
-        </>
+//         </>
 
-    );
+//     );
 
     
     
-};
-export default Stepone;
+// };
+// export default Stepone;

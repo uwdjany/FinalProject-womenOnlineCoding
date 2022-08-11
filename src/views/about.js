@@ -5,10 +5,11 @@ import './about.css'
 const About =()=>{
     return(
         <>
+        <div id='about'>
         <h4>Few words About Us</h4>
         <div className="about-container">
       
-        <section>
+        <section className="about-section">
       
         
          <p>There was one with CAPYEI, an organization that trains job skills to out-of-school youth in Kenya, who needed to completely digitalise their teaching in a very short amount of time. Then there was another project with Professio, 
@@ -49,7 +50,7 @@ const About =()=>{
          education, anytime anywhere</p>
         
         </div>
-       
+        </div>
         </>
     )
 

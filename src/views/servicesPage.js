@@ -4,7 +4,8 @@ import {  UserSwitchOutlined , DesktopOutlined  } from "@ant-design/icons";
 const ServicePage =()=>{
     return(
         <>
-        <div className='head-wrap'>
+        <div id='services'>
+        <div className='head-wrap' >
         <h1 className='wrapper-h'>Our Services</h1>
         </div>
        
@@ -44,6 +45,7 @@ const ServicePage =()=>{
         
         </div>
         
+        </div>
         </div>
         </>
     )
