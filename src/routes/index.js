@@ -10,6 +10,10 @@ import DashCourse from '../component/Courses/dashCourses';
 import CourseStucture from '../component/Courses/courseStructure';
 import { Ref } from 'react';
 import VideoPlayer from '../component/video';
+import TakeCourse from '../views/takeCourse';
+import DashAdmin from '../component/Admin/dashAdmin';
+import ApplicationPage from '../views/Application/applyPage';
+
 
 
 
@@ -35,10 +39,13 @@ const Index=()=>
     <Route exact path='/login' element= {<Login/>}></Route>
 
     <Route exact path='/about' element= {<About/>} ></Route>
-     <Route exact path='/apply' element= {<Indexi/>}></Route>
+  
      <Route exact path='/course' element= {<DashCourse/>}></Route>
     <Route exact path='/:courseName' element= {<CourseStucture/>}></Route>
     <Route exact path='/video' element= {<VideoPlayer/>}></Route>
+    <Route exact path='/take' element= {<TakeCourse/>}></Route>
+    <Route exact path='/admin' element= {<DashAdmin/>}></Route>
+    <Route exact path='/application' element= {< ApplicationPage/>}></Route>
 </Routes> 
 
     )

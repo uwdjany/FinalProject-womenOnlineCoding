@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useRef } from "react";
 import "./style2.css"
+import {Link} from 'react-scroll'
 
 import {
     MailOutlined,
@@ -13,6 +14,7 @@ import About from "../views/About";
 import Footer from "./footer";
 import ServicePage from "../views/servicesPage";
 import imagelogo from "../assets/images/logo2.png";
+import './style2.css';
 const Nav =()=>{
       //change color when scrolling
     const [color,setColor]=useState(false)
@@ -27,15 +29,9 @@ const Nav =()=>{
 window.addEventListener('scroll', changeColor)
  
 
-const services = useRef(null);
-const about = useRef(null)
-const scrollToSection = (elementRef) =>{
-    window.scrollTo({
-        top:elementRef.current.offsetTop,
-        behavior:'smooth',
-    })
-}
-
+const [click,setClick] = useState(false)
+const handleClick = () => setClick(!click)
+const closeMenu = () => setClick (false)
     return(
 
 
@@ -55,10 +51,17 @@ const scrollToSection = (elementRef) =>{
 </header>
 
         <ul className="nav-links">
-         <li><a href='/home'>Home</a></li>
+         <li style={{color:"white"}}>
+    <Link to="home" spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>Home</Link> 
+         
+         </li>
        
-        <li>Services</li>
-        <li>About Us</li>
+        <li style={{color:"white"}}>
+        <Link to="services" spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>Services</Link> 
+        </li>
+        <li style={{color:"white"}}>
+        <Link to="about" spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>About</Link> 
+        </li>
         <li><a href=''>Tutorials</a></li>
         <li><a href="/login">Login</a></li>
     
