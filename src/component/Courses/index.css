@@ -3,14 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container-course{
+/* .container-course{
     text-align: center;
     margin-right: 40%;
     margin-top: 30px;
     display:flex;
    
-}
+} */
 .video-container{
-    width: 50%;
-    margin-left: 2rem;
+    /* width: 100%; */
+    /* margin-left: 2rem; */
+    /* height:20% */
+}
+.collection{
+    background-color: red;
+    width: 10%;
+    float: right;
+    
 }
