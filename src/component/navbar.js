@@ -65,7 +65,7 @@ const closeMenu = () => setClick (false)
         <li><a href='/tuto'>Tutorials</a></li>
         <li><a href="/login">Login</a></li>
     
-        <li className="apply-btn"><a href="/application">Apply Now</a></li>
+        <li className="apply-btn"><a href="/application" style={{color:"white"}}>Apply Now</a></li>
         </ul>
         
         
