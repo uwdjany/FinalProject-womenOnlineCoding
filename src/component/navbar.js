@@ -10,7 +10,7 @@ import {
  } from  "@ant-design/icons";
 
 import Slider from '../views/slider/home';
-import About from "../views/About";
+
 import Footer from "./footer";
 import ServicePage from "../views/servicesPage";
 import imagelogo from "../assets/images/logo2.png";
@@ -62,10 +62,10 @@ const closeMenu = () => setClick (false)
         <li style={{color:"white"}}>
         <Link to="about" spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>About</Link> 
         </li>
-        <li><a href=''>Tutorials</a></li>
+        <li><a href='/tuto'>Tutorials</a></li>
         <li><a href="/login">Login</a></li>
     
-        <li className="apply-btn"><a href="/apply">Apply Now</a></li>
+        <li className="apply-btn"><a href="/application">Apply Now</a></li>
         </ul>
         
         

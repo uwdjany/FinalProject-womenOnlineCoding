@@ -17,6 +17,7 @@ about component */
 .about-img{
     width: 50%;
     height: 30%;
+    /* margin-top: 5%; */
 }
 /* .heard-one{
     background-color: rgba(0,0,0,.9);
@@ -40,7 +41,7 @@ about component */
 .icon-one{
     color:#f7941e;
     font-size: 70px;
-    margin-left: 50px;
+    margin-left: 90px;
     
     ;
 }
@@ -62,4 +63,7 @@ h4{
 }
 .icons{
     display: flex;
+}
+.section-icons{
+    /* display: flex; */
 }

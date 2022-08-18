@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box ;
+}
+.main-video video{
+    width: 100%;
+    margin-left: 2rem;
+}
+.video-playlist .videos .video{
+    position: relative;
+    width: 300%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0  1.5rem;
+    cursor: pointer;
+    border-radius: 5rem;
+margin-left: 50%;
+
+background: #555;
+}
+.video img{
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    filter:invert(100%);
+
+
+
+}
+.title-course-h6 ,.paragraph-p{
+
+    margin-left: 70%;
+    width: 300%;
+}
+.body-bg{
+    margin-top: 90px;
+    
+}
+.video-playlist {
+    height: 70%;
+   
+}
+.video-playlist .videos .video.active img{
+    filter:invert(100%) sepia(100%) saturate(2000%) hue-rotate(360deg);
+ 
+}

@@ -1,0 +1,64 @@
+/* table {
+ 
+    color: black;
+     
+     width: 80%;
+    align-items: center;
+    position: absolute;
+    top: 12rem;
+    left: 5rem; 
+   
+   }
+   
+   .deta table thead td
+   {
+       width: 20%;
+       font-weight: 600;
+       font-style: bold;
+       color: rgb(17, 17, 17);
+       background-color:rgb(75, 161, 231);
+   } 
+   td, th {
+    
+    
+     text-align:center;
+     padding-top: 2rem;
+     background-color: white;
+     box-shadow: 5px 9px 7px black;
+    
+   } 
+   .dateattendance{
+     position: absolute;
+     left: 45rem;
+     top: 4rem;
+     background-color: white;
+     box-shadow: 5px 9px 7px black;
+    
+   }
+   .selectdateAttendance{
+     position: absolute;
+     left: 41rem;
+     top:4rem ;
+     font-size: 1rem;
+   }  
+   
+    
+   tr:nth-child(even) {
+     text-decoration: center;
+   } 
+   
+    h1{
+     position: absolute;
+     top: 3rem;
+     font-style: italic;
+     color: gray;
+     width: 20%;
+     left: 6rem;
+    
+   }
+   h3{
+     position: absolute;
+     left: 58rem;
+     top: 4rem;
+   
+   } */

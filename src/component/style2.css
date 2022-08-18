@@ -76,13 +76,15 @@ span{
     
     /* background-color: rgb(211, 164, 25); */
     /* color: #fff; */
-    box-shadow: rgb(77, 71, 71) 4px 4px 0px;
-    transition:  transform 200ms, box-shadow 200ms;
+    /* box-shadow: rgb(77, 71, 71) 4px 4px 0px;
+    transition:  transform 200ms, box-shadow 200ms; */
+    border-radius: 20px;
     
 }
 .apply-btn:hover{
-    color: whi;
-    background-color:#f7941e ;
+   
+    background-color:black;
+    color: #f7941e;
 }
 
 /* 

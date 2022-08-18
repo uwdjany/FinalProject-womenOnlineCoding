@@ -1,60 +1,84 @@
-import React from 'react';
-
+import React, { useState } from 'react';
 import 'antd/dist/antd.css';
-import TableofApplication from './table'
+import { useNavigate } from 'react-router-dom';
 
-import { Breadcrumb, Layout, Menu } from 'antd';
+import {
+  MenuFoldOutlined,
+  MenuUnfoldOutlined,
+  UploadOutlined,
+  UserOutlined,
+  VideoCameraOutlined,
+} from '@ant-design/icons';
+import { Layout, Menu } from 'antd';
 
-const { Header, Content, Footer } = Layout;
+const { Header, Sider, Content } = Layout;
 
-const DashAdmin = () => (
-    <>
-    <h1 style={{}}>Admin Dashboard</h1>
-  <Layout className="layout">
-    <Header>
-      <div className="logo" />
-      <Menu
-        theme="dark"
-        mode="horizontal"
-        defaultSelectedKeys={['2']}
-        items={new Array(2).fill(null).map((_, index) => {
-          const key = index + 1;
-          return {
-            key,
-            label: `User `,
-            label: `Applicant`,
-          };
-        })}
-      />
-    </Header>
-    <Content
-      style={{
-        padding: '0 50px',
-      }}
-    >
-      <Breadcrumb
-        style={{
-          margin: '16px 0',
-        }}
-      >
-        <Breadcrumb.Item>Home</Breadcrumb.Item>
-        <Breadcrumb.Item>List</Breadcrumb.Item>
-        <Breadcrumb.Item>App</Breadcrumb.Item>
-      </Breadcrumb>
-      <div className="site-layout-content">
-      <TableofApplication />
+const  DashAdmin = ({children}) => {
+  const [collapsed, setCollapsed] = useState(false);
+  const navigate = useNavigate();
+ 
+  return (
+   <>
+   <h1>Admin DashBoard</h1>
+    <Layout>
+   
+      <Sider trigger={null} collapsible collapsed={collapsed}>
       
-      </div>
-    </Content>
-    <Footer
-      style={{
-        textAlign: 'center',
-      }}
-    >
-      PROVENCIAL WOMEN ©2022 Created by LadiesInCode
-    </Footer>
-  </Layout>
-  </>
-);
+        <div className="logo" />
+        <Menu
+          theme="dark"
+          mode="inline"
+          defaultSelectedKeys={['1']}
+          items={[
+            {
+             
+              key: '1',
+              icon: <UserOutlined onClick={()=>navigate('/list')}/>,
+              label:<h6 onClick={()=>navigate('/list')} style={{color:"white"}}>Dashboard</h6>
+            },
+            {
+             
+              key: '2',
+              icon: <UserOutlined onClick={()=>navigate('/list')}/>,
+              label:<h6 onClick={()=>navigate('/applicant')} style={{color:"white"}}>Applicants</h6>
 
-export default DashAdmin;
+
+            },
+            {
+              key: '3',
+              icon: <UserOutlined onClick={()=>navigate('/list')}/>,
+              label:<h6 onClick={()=>navigate('/tranee')} style={{color:"white"}}>Tranee</h6>
+
+            },
+          ]}
+        />
+      </Sider>
+      <Layout className="site-layout">
+        <Header
+          className="site-layout-background"
+          style={{
+            padding: 0,
+          }}
+        >
+          {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
+            className: 'trigger',
+            onClick: () => setCollapsed(!collapsed),
+          })}
+        </Header>
+        <Content
+          className="site-layout-background"
+          style={{
+            margin: '24px 16px',
+            padding: 24,
+            minHeight: 280,
+          }}
+        >
+        {children}
+        </Content>
+      </Layout>
+    </Layout>
+    </>
+  );
+};
+
+export default  DashAdmin;

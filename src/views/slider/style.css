@@ -14,7 +14,7 @@ img{
     top: 10rem;
     left: 5rem;
     opacity: 0; 
-    width: 55%;
+    width: 40%;
     padding: 2rem;
     background: rgb(0, 0, 0, 0.3);
     animation: slide-up 1s ease .5s;
@@ -22,7 +22,10 @@ img{
      /* visibility: hidden; */
 color:rgb(0, 0, 0);
 font-weight: 500;
-height: 55%;
+height: 30%;
+margin-left: 25%;
+    border-radius: 10%;
+    box-shadow: 20px 10px 20px 10px black;
 
 }
 @keyframes slide-up {
@@ -70,29 +73,38 @@ height: 55%;
 
     left: 1.5rem;
 }
-hr{
+/* hr{
     height: 2px;
     background: #fff;
     width: 50%;
-}
+} */
 .btn{
     margin: 20px;
-    border-radius: 8px;
-    font-size: 20px;
-    padding: 8px;
+    border-radius: 29px;
+    font-size: 15px;
+    padding: 3px;
     font-weight: 700;
     background-color: #f7941e;
     color: #fff;
+    margin-left: 100px;
+
+    /* color: #fff;
     box-shadow: rgb(90, 71, 13) 4px 4px 0px;
     transition:  transform 200ms, box-shadow 200ms;
-    
+     */
 }
 .btn:hover{
-    background: transparent;
+    background: black;
     color: #f7941e;
 }
 .image-slider{
     background-image: linear-gradient(to top,rgba(18, 18, 34, 0.639),yellow);
     color: transparent;
     
+}
+.heading-four{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 20px;
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useParams  } from "react-router-dom";
 
-import './index.css'
+ import './index.css'
 
 function CourseStucture (props){
     console.log(props)

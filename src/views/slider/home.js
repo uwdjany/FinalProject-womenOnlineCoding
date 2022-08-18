@@ -3,9 +3,9 @@ import  {useState,useEffect} from "react";
 import { sliderData  } from "./slider-data";
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@ant-design/icons";
 import './style.css'
-import './style2.css'
+// import './style2.css'
 
-import About from "../About";
+import About from "../about";
 
 import Nav from "../../component/navbar";
 import  Footer  from "../../component/footer";
@@ -101,13 +101,13 @@ function auto(){
                 "slide current" : "slide"} key={index}>
                 {index === currentSlide && (
                     <>
-                    <img src={slide.image} alt="slide" className="image-slider"/>
+                    <img src={slide.image} alt="slide" style={{ backgroundImage:"linear-gradient(rgba(45, 55, 72, 0.6), rgba(45, 55, 72, 0.3)),"}}/>
                     <div className="content">
         
-                      <h2>{slide.heading}</h2>
+                      <h4 className="heading-four">{slide.heading}</h4>
                       <p>{slide.desc}</p>
                       <hr />
-                      <button className="btn">Apply Now</button>
+                      <button className="btn">{slide.btn}</button>
 
                     </div>
                     </>
