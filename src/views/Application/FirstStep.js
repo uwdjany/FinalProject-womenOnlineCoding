@@ -6,7 +6,7 @@ export default function FirstPage (){
 
 return(
 <div>
-<h5 style={{marginLeft : '30%' ,fontSize:'20px'}}>PERSONAL INFORMATION</h5>
+<h5 style={{marginLeft : '30%' ,fontSize:'20px',}}>PERSONAL INFORMATION</h5>
 <div>
 
 <TextField label="First name" margin="normal" variant="outlined" color="secondary" style={{width:'40%', marginLeft : '30%' ,marginTop: '50px'}} />
@@ -17,7 +17,7 @@ return(
 </div>
 <div>
 
-<TextField label="Contact Number" margin="normal" variant="outlined" color="secondary" style={{width:'40%', marginLeft : '30%'}}/>
+<TextField label="PhoneNumber" margin="normal" variant="outlined" color="secondary" style={{width:'40%', marginLeft : '30%'}}/>
 </div>
 
 

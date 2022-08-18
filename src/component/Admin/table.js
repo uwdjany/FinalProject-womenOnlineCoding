@@ -1,98 +1,47 @@
-import React from 'react';
-import 'antd/dist/antd.css';
+import React from 'react'
+import { Table } from 'semantic-ui-react'
+import DashAdmin from './dashAdmin'
 
-import { Table } from 'antd';
+const TableExampleInverted = () => (
 
-const columns = [
-  {
-    title: 'Full Name',
-    width: 100,
-    dataIndex: 'name',
-    key: 'name',
-    fixed: 'left',
-  },
-  {
-    title: 'Age',
-    width: 100,
-    dataIndex: 'age',
-    key: 'age',
-    fixed: 'left',
-  },
-  {
-    title: 'Column 1',
-    dataIndex: 'address',
-    key: '1',
-    width: 150,
-  },
-  {
-    title: 'Column 2',
-    dataIndex: 'address',
-    key: '2',
-    width: 150,
-  },
-  {
-    title: 'Column 3',
-    dataIndex: 'address',
-    key: '3',
-    width: 150,
-  },
-  {
-    title: 'Column 4',
-    dataIndex: 'address',
-    key: '4',
-    width: 150,
-  },
-  {
-    title: 'Column 5',
-    dataIndex: 'address',
-    key: '5',
-    width: 150,
-  },
-  {
-    title: 'Column 6',
-    dataIndex: 'address',
-    key: '6',
-    width: 150,
-  },
-  {
-    title: 'Column 7',
-    dataIndex: 'address',
-    key: '7',
-    width: 150,
-  },
-  {
-    title: 'Column 8',
-    dataIndex: 'address',
-    key: '8',
-  },
-  {
-    title: 'Action',
-    key: 'operation',
-    fixed: 'right',
-    width: 100,
-    render: () => <a>action</a>,
-  },
-];
-const data = [];
+  <DashAdmin>
+  <Table inverted>
+    <Table.Header>
+      <Table.Row>
+        <Table.HeaderCell>Name</Table.HeaderCell>
+        <Table.HeaderCell>Status</Table.HeaderCell>
+        <Table.HeaderCell>Notes</Table.HeaderCell>
+      </Table.Row>
+    </Table.Header>
 
-for (let i = 0; i < 100; i++) {
-  data.push({
-    key: i,
-    name: `Edrward ${i}`,
-    age: 32,
-    address: `London Park no. ${i}`,
-  });
-}
+    <Table.Body>
+      <Table.Row>
+        <Table.Cell>John</Table.Cell>
+        <Table.Cell>Approved</Table.Cell>
+        <Table.Cell>None</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>Jamie</Table.Cell>
+        <Table.Cell>Approved</Table.Cell>
+        <Table.Cell>Requires call</Table.Cell>
+      </Table.Row>
+      <Table.Row>
+        <Table.Cell>Jill</Table.Cell>
+        <Table.Cell>Denied</Table.Cell>
+        <Table.Cell>None</Table.Cell>
+      </Table.Row>
+    </Table.Body>
 
-const TableofApplication  = () => (
-  <Table
-    columns={columns}
-    dataSource={data}
-    scroll={{
-      x: 1500,
-      y: 300,
-    }}
-  />
-);
+    <Table.Footer>
+      <Table.Row>
+        <Table.HeaderCell>3 People</Table.HeaderCell>
+        <Table.HeaderCell>2 Approved</Table.HeaderCell>
+        <Table.HeaderCell />
+      </Table.Row>
+    </Table.Footer>
+  </Table>
 
-export default TableofApplication ;
+  </DashAdmin>
+)
+
+export default TableExampleInverted

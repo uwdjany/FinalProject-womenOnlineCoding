@@ -22,6 +22,7 @@ const About =()=>{
 
         
         </section>
+
         
         <img src={image} className="about-img"/>
     
@@ -29,15 +30,24 @@ const About =()=>{
         
         
         </div>
+        <div className="section-icons">
         <div className="icons">
         <p className="icon-one">
         <EyeFilled/>
         
         </p>
-        <h6 className="para">Our Vision </h6>
+        &nbsp;
+        &nbsp;
+        <h6 className="para"> <u style={{color:"black",fontWeight: 900,fontSize:"20px"}}>Our Vision</u> <br />
+        <br />
+        <br />
+        <i style={{fontWeight: 300}}>Bringing opportunity to attain excellent  <br />
+        Bringing opportunity to attain excellent  <br />
+        Bringing opportunity to attain excellent </i>
         
-        <p className="paragraph">Bringing opportunity to attain excellent < br />
-         education, anytime anywhere</p>
+        </h6>
+        
+       
         
         </div>
         <div className="icons">
@@ -45,9 +55,20 @@ const About =()=>{
         <BulbFilled/>
         
         </p>
-        <h6 className="para">Our Mission</h6>
-        <p className="paragraph">Bringing opportunity to attain excellent < br />
-         education, anytime anywhere</p>
+        &nbsp;
+        &nbsp;
+        <h6 className="para"> <u style={{color:"black",fontWeight: 900,fontSize:"20px"}}>Our Mission</u> <br />
+        <br />
+        <br />
+        <i style={{fontWeight: 300}}>Bringing opportunity to attain excellent  <br />
+        Bringing opportunity to attain excellent  <br />
+        Bringing opportunity to attain excellent </i>
+        
+        </h6>
+        
+       
+        
+        </div>
         
         </div>
         </div>

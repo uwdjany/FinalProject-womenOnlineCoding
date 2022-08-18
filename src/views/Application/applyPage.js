@@ -35,8 +35,8 @@ const ApplicationPage = () => {
 
   return (
     <>
-    <h1 style={{float:"left",marginTop:"40px"}}>Apply Form</h1>
-      <Steps current={current} style={{width:"80%" , marginLeft:'120px'}}>
+    <h1 style={{marginTop:"5%",color:"#f7941e",marginLeft:"50px"}}>Apply Form</h1>
+      <Steps current={current} style={{width:"80%" , marginLeft:'120px',}}>
         {steps.map((item) => (
           <Step key={item.title} title={item.title} />
         ))}
@@ -44,12 +44,12 @@ const ApplicationPage = () => {
       <div className="steps-content">{steps[current].content}</div>
       <div className="steps-action">
         {current < steps.length - 1 && (
-          <Button type="primary" onClick={() => next()}>
+          <Button type="primary" onClick={() => next()} style={{marginLeft:"380px"}}>
             Next
           </Button>
         )}
         {current === steps.length - 1 && (
-          <Button type="primary" onClick={() => message.success('Processing complete!')}>
+          <Button type="primary" onClick={() => message.success('Processing complete!')}  style={{marginLeft:"380px"}}>
             Done
           </Button>
         )}

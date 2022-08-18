@@ -1,8 +1,8 @@
-:root{
-    --primary:linear-gradient(to bottom right, #555,black);
+/* :root{
+    --primary:linear-gradient(to bottom right,white,gray);
     --secondary:gold;
     --text:#fff;
-}
+} */
 *{
     margin:0;
     padding:0;
@@ -10,7 +10,7 @@
 }
 .body-bg{
     min-height: 100vh;
-    background-image: var(--primary);
+    /* background-image: var(--primary); */
     font-family: sans-serif;
     color: var(--text);
     display: flex;
@@ -29,7 +29,7 @@
 
 
 
-.main-video video{
+.main-video video {
 
     width: 100%;
     border-radius: 5rem;
@@ -67,7 +67,7 @@
     overflow-y: auto;
 }
 .video-playlist .videos .videos::-webkit-scrollbar {
-    width: .4rem;
+    width: 4rem;
     border-radius: .4rem;
     background-color: #0005 ;
 }
@@ -87,6 +87,7 @@
     padding: 0 1rem;
     cursor: pointer;
     border-radius: 5rem;
+margin-left: 50%;
 }
 .video-playlist .videos .video:hover{
     background-color: #0003;
@@ -97,7 +98,7 @@
 }
 .video h6{
 
-    width: 20rem;
+    width: 2rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -111,7 +112,4 @@
 .video-playlist .videos .video.active img{
     filter:invert(100%) sepia(100%) saturate(2000%) hue-rotate(360deg);
  
-}
-.video-playlist{
-    margin-right: 50%;
 }
