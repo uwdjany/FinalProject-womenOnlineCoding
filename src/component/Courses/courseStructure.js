@@ -9,13 +9,19 @@ function CourseStucture (props){
 
 const {courseName} = useParams();
 const courses = {
-    html:[
+    htmlCourse:[
 
        {title:"HTML Course for beginners",vid:"6kycPB7RMnY"},
        {title:"htlm  title 2",vid:"FeC_fQgbMzI"},
        {title:"htlm title 3",vid:"FeC_fQgbMzI"}
     ],
-    css:[
+    cssCourse:[
+
+        {title:"css title 1",vid:"qKoajPPWpmo"},
+        {title:"css title 2",vid:"UO0ZPL8yMpU"},
+        {title:"css title 3",vid:"https://youtu.be/UO0ZPL8yMpU"}
+     ],
+     javascriptCourse:[
 
         {title:"css title 1",vid:"qKoajPPWpmo"},
         {title:"css title 2",vid:"UO0ZPL8yMpU"},

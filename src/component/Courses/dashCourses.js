@@ -5,14 +5,31 @@ import { Link } from "react-router-dom";
 const DashCourse =()=>{
 
     return(
-        <div className="container-course">
-        <Link to='/html'>
-        <h1 className="heading-h1">HTML Course</h1>
+        <div>
+        <header style={{textAlign:"center",fontSize:"5rem",fontWeight:"500"}}>Video Course</header>
+        <Link to='/htmlCourse'>
+        <ul>   
+        
+        <li style={{fontSize:"2rem",textAlign:"center"}}>HTML Course</li>
+        </ul>
         
         </Link>
 
-        <Link to='/css'>
-        <h1>CSS Course</h1>
+        <Link to='/cssCourse'>
+        <ul>
+        <li style={{fontSize:"2rem",textAlign:"center"}}>CSS Course</li>
+        
+        </ul>
+        
+        
+        </Link>
+
+        <Link to='/javascriptCourse'>
+        <ul>
+        <li style={{fontSize:"2rem",textAlign:"center"}}>JAVAScript Course</li>
+        
+        </ul>
+        
         
         </Link>
         
