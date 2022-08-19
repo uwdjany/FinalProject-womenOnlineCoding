@@ -1,7 +1,7 @@
 import  {useState,useEffect} from "react";
  //import "./Slider.scss"
 import { sliderData  } from "./slider-data";
-import { ArrowLeftOutlined, ArrowRightOutlined } from "@ant-design/icons";
+import {DoubleRightOutlined,DoubleLeftOutlined } from "@ant-design/icons";
 import './style.css'
 // import './style2.css'
 
@@ -24,18 +24,6 @@ import {
 
 const Slider = () =>{
 
-
-
-
-
-
-
-
-
-
-
-
-    // =================================================================
     const [currentSlide , setCurrentSlide] = useState(0);
     const slideLength = sliderData.length;
 
@@ -73,17 +61,6 @@ function auto(){
     
     return(
         <>
-        
-
-
-
-
-
-
-
-
-
-
 
 
 // =============================================Home===============================================
@@ -91,9 +68,10 @@ function auto(){
 
 <Nav/>
         <div className="slide" id="home">
-       
-        <ArrowLeftOutlined className="arrow prev" onClick={prevSlide}/>
-        <ArrowRightOutlined className="arrow next" onClick={nextSlide}/>
+        <DoubleLeftOutlined className="arrow prev" onClick={prevSlide}/>
+        <DoubleRightOutlined className="arrow next" onClick={nextSlide} />
+      
+        
         {sliderData.map((slide,index)=> {
             
             return(
