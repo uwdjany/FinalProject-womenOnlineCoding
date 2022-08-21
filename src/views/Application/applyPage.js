@@ -2,24 +2,21 @@ import React, { useState } from 'react';
 import 'antd/dist/antd.css';
 
 import { Button, message, Steps } from 'antd';
-import ThirdStep from './thirdStep';
+
 import FirstPage from './FirstStep';
 import SecondStep from './secondStep';
 
 const { Step } = Steps;
 const steps = [
   {
-    title: 'First',
+    title: 'First Stage',
     content: <FirstPage/>,
   },
   {
-    title: 'Second',
+    title: 'Second Stage',
     content: <SecondStep/>,
   },
-  {
-    title: 'Last',
-    content: <ThirdStep/>,
-  },
+
 ];
 
 const ApplicationPage = () => {
