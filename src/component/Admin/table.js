@@ -27,7 +27,7 @@ const TableExampleInverted = () => (
       </Table.Row>
       <Table.Row>
         <Table.Cell>uwasey7@gmail.com</Table.Cell>
-        <Table.Cell>Denied</Table.Cell>
+        <Table.Cell>Rejected</Table.Cell>
         <Table.Cell>None</Table.Cell>
       </Table.Row>
 
@@ -38,12 +38,12 @@ const TableExampleInverted = () => (
     </Table.Row>
     <Table.Row>
     <Table.Cell>uwasey7@gmail.com</Table.Cell>
-    <Table.Cell>Denied</Table.Cell>
+    <Table.Cell>Approved</Table.Cell>
     <Table.Cell>None</Table.Cell>
   </Table.Row>
   <Table.Row>
   <Table.Cell>uwasey7@gmail.com</Table.Cell>
-  <Table.Cell>Denied</Table.Cell>
+  <Table.Cell>Rejected</Table.Cell>
   <Table.Cell>None</Table.Cell>
 </Table.Row>
     <Table.Row>
@@ -55,8 +55,8 @@ const TableExampleInverted = () => (
 
     <Table.Footer>
       <Table.Row>
-        <Table.HeaderCell>3 People</Table.HeaderCell>
-        <Table.HeaderCell>2 Approved</Table.HeaderCell>
+        <Table.HeaderCell>7 Applicants</Table.HeaderCell>
+        <Table.HeaderCell>5 Approved</Table.HeaderCell>
         <Table.HeaderCell />
       </Table.Row>
     </Table.Footer>

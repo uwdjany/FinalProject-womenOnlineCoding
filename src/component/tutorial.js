@@ -1,16 +1,18 @@
 import React from "react";
-import "./tutorial.css";
+// import "./tutorial.css";
  
 const tutorials = () => {
  return(  
-        <table>
+      <>
+
+      <div style={{marginTop:"20px",marginLeft:"30px"}}>
    
     <p><b> LadiesInCode HELPFUL TUTORIALS</b> </p>      
 
-  <div className="h1">        
+  <div style={{display:"flex", justifyContent:"space-between"}}>        
  <div >
 
- <h1>HTML and CSS</h1>
+ <header>HTML and CSS</header>
 <ul>
  <li><a href="https://www.w3schools.com/html/default.asp">Learn HTML</a></li>
  <li><a href="https://www.w3schools.com/css/default.asp">Learn CSS</a></li>
@@ -25,7 +27,21 @@ const tutorials = () => {
 
             <div className="jsdiv">
 
-            <h1>JavaScript</h1>
+            <header>JavaScript</header>
+            <ul>
+            <li><a href="https://www.w3schools.com/js/default.asp">Learn JavaScript</a></li>
+            <li><a href="https://www.w3schools.com/jquery/default.asp">Learn jQuery</a></li>
+            <li><a href="https://www.w3schools.com/react/default.asp">Learn React</a></li>
+            <li><a href="https://www.w3schools.com/angular/default.asp">Learn AngularJS</a></li>
+            <li><a href="https://www.w3schools.com/angular/default.asp">Learn JSON</a></li>
+            <li><a href="https://www.w3schools.com/js/js_ajax_intro.asp">Learn Ajax</a></li>
+            <li><a href="https://www.w3schools.com/appml/default.asp">Learn AppML</a></li>
+            <li><a href="https://www.w3schools.com/appml/default.asp">------w3.js</a></li>
+            </ul>
+            </div>
+            <div className="jsdiv">
+
+            <header>JavaScript</header>
             <ul>
             <li><a href="https://www.w3schools.com/js/default.asp">Learn JavaScript</a></li>
             <li><a href="https://www.w3schools.com/jquery/default.asp">Learn jQuery</a></li>
@@ -40,7 +56,7 @@ const tutorials = () => {
 
 
 <div className="h3">
-            <h1>Data Analytics</h1>
+            <header>Data Analytics</header>
             <ul>
             <li><a href="https://www.w3schools.com/ai/default.asp">Learn AI</a></li>
             <li><a href="https://www.w3schools.com/jquery/default.asp">Learn Machine Learning</a></li>
@@ -55,7 +71,7 @@ const tutorials = () => {
 
 
            <div className="h4">
-            <h1>Programming</h1>
+            <header>Programming</header>
             <ul>
             <li><a href="https://www.w3schools.com/python/default.asp">Learn Python</a></li>
             <li><a href="https://www.w3schools.com/java/default.asp">Learn Java</a></li>
@@ -68,9 +84,11 @@ const tutorials = () => {
             </ul>
             </div>
             </div>
+
+            <div style={{display:"flex", justifyContent:"space-between"}}>  
            
            <div className="h5">
-            <h1>XML Tutorials</h1>
+            <header>XML Tutorials</header>
             <ul>
  
             <li>< a href="https://www.w3schools.com/xml/default.asp">Learn XML </a></li>
@@ -85,7 +103,7 @@ const tutorials = () => {
 
             <div className="h6">
             <ul>
-            <h1>Server Side</h1>
+            <header>Server Side</header>
             <li><a href="https://www.w3schools.com/sql/default.asp">Learn SQL</a></li>
             <li><a href="https://www.w3schools.com/sql/default.asp">Learn MySQL</a></li>
             <li><a href="https://www.w3schools.com/php/default.asp">Learn PHP</a></li>
@@ -99,7 +117,7 @@ const tutorials = () => {
 
             <div className="h7">
             <ul>
-                  <h1>Web Building</h1>
+                  <header>Web Building</header>
             <li><a href="https://www.w3schools.com/spaces/">Create a Website</a></li>
             <li><a href="https://www.w3schools.com/where_to_start.asp">Where To Start</a></li>
             <li><a href="https://www.w3schools.com/w3css/w3css_templates.asp">Web Templates</a></li>
@@ -110,11 +128,40 @@ const tutorials = () => {
             <li><a href="https://www.w3schools.com/cybersecurity/index.php">Cyber Security</a></li>
             </ul>
             </div>
+            <div className="h7">
+            <ul>
+                  <header>Web Building</header>
+            <li><a href="https://www.w3schools.com/spaces/">Create a Website</a></li>
+            <li><a href="https://www.w3schools.com/where_to_start.asp">Where To Start</a></li>
+            <li><a href="https://www.w3schools.com/w3css/w3css_templates.asp">Web Templates</a></li>
+            <li><a href="https://www.w3schools.com/browsers/default.asp">Web Statistics</a></li>
+            <li><a href="https://www.w3schools.com/browsers/default.asp">Web Certificates</a></li>
+            <li><a href="https://www.w3schools.com/whatis/default.asp">Web Development</a></li>
+            <li><a href="https://www.w3schools.com/tryit/default.asp">Code Editor</a></li>
+            <li><a href="https://www.w3schools.com/cybersecurity/index.php">Cyber Security</a></li>
+            </ul>
+            </div>
+            <div className="h7">
+            <ul>
+                  <header>Web Building</header>
+            <li><a href="https://www.w3schools.com/spaces/">Create a Website</a></li>
+            <li><a href="https://www.w3schools.com/where_to_start.asp">Where To Start</a></li>
+            <li><a href="https://www.w3schools.com/w3css/w3css_templates.asp">Web Templates</a></li>
+            <li><a href="https://www.w3schools.com/browsers/default.asp">Web Statistics</a></li>
+            <li><a href="https://www.w3schools.com/browsers/default.asp">Web Certificates</a></li>
+            <li><a href="https://www.w3schools.com/whatis/default.asp">Web Development</a></li>
+            <li><a href="https://www.w3schools.com/tryit/default.asp">Code Editor</a></li>
+            <li><a href="https://www.w3schools.com/cybersecurity/index.php">Cyber Security</a></li>
+            </ul>
+            </div>
+            </div>
+            </div>
+            </>
       
              
             
               
-      //      </table>   
+        
 )
 
 }
