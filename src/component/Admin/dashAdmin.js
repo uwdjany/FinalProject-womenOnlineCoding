@@ -19,7 +19,7 @@ const  DashAdmin = ({children}) => {
  
   return (
    <>
-   <h1>Admin DashBoard</h1>
+   
     <Layout>
    
       <Sider trigger={null} collapsible collapsed={collapsed}>
@@ -33,23 +33,37 @@ const  DashAdmin = ({children}) => {
             {
              
               key: '1',
-              icon: <UserOutlined onClick={()=>navigate('/list')}/>,
-              label:<h6 onClick={()=>navigate('/list')} style={{color:"white"}}>Dashboard</h6>
+              icon: <UserOutlined onClick={()=>navigate('/dash')}/>,
+              label:<h6 onClick={()=>navigate('/dash')} style={{color:"white"}}>DashBoard</h6>
             },
             {
              
               key: '2',
               icon: <UserOutlined onClick={()=>navigate('/list')}/>,
-              label:<h6 onClick={()=>navigate('/applicant')} style={{color:"white"}}>Applicants</h6>
+              label:<h6 onClick={()=>navigate('/list')} style={{color:"white"}}>Trainees</h6>
+            },
+            {
+             
+              key: '3',
+              icon: <UserOutlined onClick={()=>navigate('/apply')}/>,
+              label:<h6 onClick={()=>navigate('/apply')} style={{color:"white"}}>Applicants</h6>
 
 
             },
             {
-              key: '3',
-              icon: <UserOutlined onClick={()=>navigate('/list')}/>,
-              label:<h6 onClick={()=>navigate('/tranee')} style={{color:"white"}}>Tranee</h6>
+             
+              key: '4',
+              icon: <UserOutlined onClick={()=>navigate('/alltrainee')}/>,
+              label:<h6 onClick={()=>navigate('/alltrainee')} style={{color:"white"}}>All Mentors</h6>
+
 
             },
+            // {
+            //   key: '4',
+            //   icon: <UserOutlined onClick={()=>navigate('/tranee')}/>,
+            //   label:<h6 onClick={()=>navigate('/tranee')} style={{color:"white"}}>Applicants</h6>
+
+            // },
           ]}
         />
       </Sider>
@@ -69,7 +83,7 @@ const  DashAdmin = ({children}) => {
           className="site-layout-background"
           style={{
             margin: '24px 16px',
-            padding: 24,
+            padding: 50,
             minHeight: 280,
           }}
         >

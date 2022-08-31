@@ -45,7 +45,7 @@ h1{
     margin-left: 60%;
 }
 .header-top{
-    background-color: rgb(39, 36, 36);
+    background-color:rgb(36, 36, 36);
     height: 30px;
 
  
@@ -54,7 +54,7 @@ h1{
     
 }
 span{
-    color: white ;
+    color: #f7941e;
     font-weight: 900;
     margin-top: 5px;
     

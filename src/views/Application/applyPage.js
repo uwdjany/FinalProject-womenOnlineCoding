@@ -2,27 +2,54 @@ import React, { useState } from 'react';
 import 'antd/dist/antd.css';
 
 import { Button, message, Steps } from 'antd';
-import ThirdStep from './thirdStep';
+
 import FirstPage from './FirstStep';
 import SecondStep from './secondStep';
+import ApplicationServices from "../../services/applicationServices"
 
 const { Step } = Steps;
 const steps = [
   {
-    title: 'First',
+    title: 'First Stage',
     content: <FirstPage/>,
   },
   {
-    title: 'Second',
+    title: 'Second Stage',
     content: <SecondStep/>,
   },
-  {
-    title: 'Last',
-    content: <ThirdStep/>,
-  },
+
 ];
 
 const ApplicationPage = () => {
+
+  // const onFinish = async(values)=>{
+
+  //   const appObj ={
+  //     ...values,
+
+
+
+  //   }
+
+  // }
+  const onFinish = async(values) => {
+    const appObj = {
+      ...values,
+   
+     
+    };
+    console.log("Received values of form: ", values);
+
+    console.log("Apply: ", appObj);
+
+    const res =  await ApplicationServices.crateApplication(appObj);
+
+    console.group("<<<<<<<<:",res)
+  };
+
+
+
+  
   const [current, setCurrent] = useState(0);
 
   const next = () => {
@@ -36,7 +63,7 @@ const ApplicationPage = () => {
   return (
     <>
     <h1 style={{marginTop:"5%",color:"#f7941e",marginLeft:"50px"}}>Apply Form</h1>
-      <Steps current={current} style={{width:"80%" , marginLeft:'120px',}}>
+      <Steps current={current} style={{width:"80%" , marginLeft:'120px',}} onFinish={onFinish}>
         {steps.map((item) => (
           <Step key={item.title} title={item.title} />
         ))}

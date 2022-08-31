@@ -24,7 +24,7 @@ function Login () {
 
   <div>
   <img src={email} alt="email" className='email'/>
-  <input type="text" placeholder=' email' className='name'   />
+  <input type="text" placeholder=' email' className='name'/>
     </div>
     <div className='second-input'>
     <img src={pass} alt="pass" className='email'/>
@@ -36,7 +36,7 @@ function Login () {
     
 
     <p className='linn'>
-      <a href='#'>Forgot password ?</a> or <a href="#">Sign up </a>
+      <a href='#'>Forgot password ?</a> or <a href="/signin">Sign up </a>
     </p>
 
 
