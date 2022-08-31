@@ -1,17 +1,30 @@
-import react from "react";
+import React, {useState,useEffect} from "react";
 import "./Attendance.css";
-import userData from "../../assets/json/attendence.json";
+//import userData from "../../assets/json/attendence.json";
 import {Form,Select} from "antd"
 import DashAdmin from "./dashAdmin";
+
+import ApplicationServices from "../../services/applicationServices"
+
+
 const Attendance = () => {
+
+const [userData,setuserData] = useState([]);
+  useEffect(()=>{
+    ApplicationServices.getAllApplication().then((res) =>{
+      // console.log("this is the reso",res)
+       setuserData(res?.data)
+    })
+  },[])
   return (
     < DashAdmin>
     <>
     
-      <h1> Take Attendance </h1>
+      <header style={{fontSize:"40px",textAlign:"center",color:"#f7941e",fontWeight:"900"}}> Our Applicants</header> 
 
       <div className="date1">
         <h5 className="selectdateAttendance">Date:</h5>
+      
         <input type="date" id="date" name="date" className="dateattendance" />
         
          
@@ -34,29 +47,48 @@ const Attendance = () => {
           <thead>
             <tr>
               <td> No</td>
-              <td>Names</td>
+              <td>First Name</td>
+              <td>Last Name</td>
               <td>Email</td>
-              <td>
+              <td>Phone Number</td>
+              <td>Your Provence</td>
+              <td>Residence Provence</td>
+              <td>Gender</td>
+              <td>Education Qualification</td>
+
+              <td>Decision</td>
+              {/*
+
+<td>
                 <label for="vehicle2">Attendance</label>
               </td>
+  */}
             </tr>
           </thead>
           <tbody>
-            {userData.map((index) => (
+            {userData.map((apply) => (
               <tr>
-                <td>{index.No}</td>
-                <td>{index.Names}</td>
-                <td>{index.Email}</td>
-
-                <td>
-                  {index.Attendance}
+                <td>{apply.No}</td>
+                <td>{apply.firstName}</td>
+                <td>{apply.lastName}</td>
+                <td>{apply.email}</td>
+                <td>{apply.phoneNumber}</td>
+                <td>{apply.yourProvence}</td>
+                <td>{apply.residenceProvence}</td>
+                <td>{apply.gender}</td>
+                <td>{apply.educationQualification}</td>
+                <td ><a href style={{background:"skyblue",padding:"10px",color:"black",fontWeight:"500"}}>Accept</a></td>
+                <td><a href style={{background:"red",padding:"10px",color:"black",fontWeight:"500"}}>Reject</a></td>
+             {
+             /*<td>
+                  {apply.Attendance}
                   <input
                     type="checkbox"
                     id="vehicle3"
                     name="vehicle3"
                     value="Boat"
                   />
-                </td>
+             </td>*/}
               </tr>
             ))}
           </tbody>

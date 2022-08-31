@@ -13,9 +13,10 @@ import Tutorials from '../component/tutorial';
 import Attendance from '../component/Admin/attendence';
 import TableofApplication from '../component/Admin/table'
 
-import Chart from '../component/Admin/chart'
+import Chart from '../component/Admin/chart';
+import AllTrainee from "../component/Admin/allTrainees"
 
-
+import Signin from "../views/signupMentor";
 
 const Index=()=>
 {
@@ -48,9 +49,10 @@ const Index=()=>
     <Route exact path='/list' element={<Attendance/>}></Route>
     <Route exact path='/apply' element={<TableofApplication/>}></Route>
    
-    
+    <Route exact path='/signin' element={<Signin/>}></Route>
     
     <Route exact path='dash' element={<Chart/>}></Route>
+    <Route exact path='/alltrainee' element={<AllTrainee/>}></Route>
 </Routes> 
 
     )
