@@ -50,6 +50,14 @@ const  DashAdmin = ({children}) => {
 
 
             },
+            {
+             
+              key: '4',
+              icon: <UserOutlined onClick={()=>navigate('/alltrainee')}/>,
+              label:<h6 onClick={()=>navigate('/alltrainee')} style={{color:"white"}}>All Mentors</h6>
+
+
+            },
             // {
             //   key: '4',
             //   icon: <UserOutlined onClick={()=>navigate('/tranee')}/>,

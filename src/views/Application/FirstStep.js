@@ -1,18 +1,35 @@
 import React , {useContext} from 'react';
 import {TextField,MenuItem,FormLabel,Radio,RadioGroup,FormControlLabel} from '@material-ui/core';
-
+import ApplicationServices from '../../services/applicationServices';
 
 export default function FirstPage (){
+
+  // const onFinish = async(values) => {
+  //   const appObj = {
+  //     ...values,
+   
+     
+  //   };
+  //   console.log("Received values of form: ", values);
+
+  //   console.log("Apply: ", appObj);
+
+  //   const res =  await ApplicationServices.crateApplication(appObj);
+
+  //   console.group("<<<<<<<<:",res)
+  // };
+
+
 
 return(
 <div>
 <h5 style={{marginLeft : '30%' ,fontSize:'20px',}}>PERSONAL INFORMATION</h5>
 <div>
 
-<TextField label="First name" margin="normal" variant="outlined" color="secondary" style={{width:'40%', marginLeft : '30%' ,marginTop: '50px'}} />
+<TextField label="First name" name="firstName" margin="normal" variant="outlined" color="secondary" style={{width:'40%', marginLeft : '30%' ,marginTop: '50px'}} />
 </div>
 <div>
-<TextField label="Last name" margin="normal" variant="outlined" color="secondary" style={{width:'40%', marginLeft : '30%'}} />
+<TextField label="Last name" margin="normal" name="lastName" variant="outlined" color="secondary" style={{width:'40%', marginLeft : '30%'}} />
 
 </div>
 <div>

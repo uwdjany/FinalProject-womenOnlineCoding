@@ -1,39 +1,18 @@
 [
     {  
          "No":"1",
-        "Names":"Djanati Uwase",
+        "FirstName":" Uwase",
+        "LastName":" Djanati",
         "Email":"djanatiuwase45@gamil.com",
         "Attendance":""
     },
     {  
         "No":"2 ",
-       "Names":"Yvone Uwase",
+        "FirstName":" Uwase",
+        "LasNatme":" Yvonne",
        "Email":"uwasey7@gamil.com",
        "Attendance":""
-   },
-   {  
-    "No":"3 ",
-   "Names":"Divine Byiza",
-   "Email":"didibyiza45@gamil.com",
-   "Attendance":""
-},
-{  
-    "No":"4 ",
-   "Names":"Djanatti",
-   "Email":"Djannati@gamil.com",
-   "Attendance":""
-},
-{  
-    "No":"5",
-   "Names":"uwase",
-   "Email":"uwase@gamil.com",
-   "Attendance":""
-},
-{  
-    "No":"1",
-   "Names":"Djanati Uwase",
-   "Email":"djanatiuwase45@gamil.com",
-   "Attendance":""
-}
+   }
+  
 
 ]

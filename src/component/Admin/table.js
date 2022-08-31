@@ -51,17 +51,15 @@ const TableExampleInverted = () => (
     <Table.Cell>Approved</Table.Cell>
     <Table.Cell>None</Table.Cell>
   </Table.Row>
-    </Table.Body>
-
-    <Table.Footer>
-      <Table.Row>
-        <Table.HeaderCell>7 Applicants</Table.HeaderCell>
-        <Table.HeaderCell>5 Approved</Table.HeaderCell>
-        <Table.HeaderCell />
-      </Table.Row>
-    </Table.Footer>
+  </Table.Body>
+  <Table.Footer>
+  <Table.Row>
+  <Table.HeaderCell>7 Applicants</Table.HeaderCell>
+  <Table.HeaderCell>5 Approved</Table.HeaderCell>
+  <Table.HeaderCell />
+  </Table.Row>
+  </Table.Footer>
   </Table>
-
   </DashAdmin>
 )
 
