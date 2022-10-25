@@ -58,12 +58,7 @@ const  DashAdmin = ({children}) => {
 
 
             },
-            // {
-            //   key: '4',
-            //   icon: <UserOutlined onClick={()=>navigate('/tranee')}/>,
-            //   label:<h6 onClick={()=>navigate('/tranee')} style={{color:"white"}}>Applicants</h6>
-
-            // },
+        
           ]}
         />
       </Sider>

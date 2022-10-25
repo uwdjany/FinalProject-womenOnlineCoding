@@ -5,7 +5,7 @@ import Login from '../views/login';
 import About from '../views/about';
 import DashCourse from '../component/Courses/dashCourses';
 import CourseStucture from '../component/Courses/courseStructure';
-import { Ref } from 'react';
+
 import TakeCourse from '../views/takeCourse';
 import DashAdmin from '../component/Admin/dashAdmin';
 import ApplicationPage from '../views/Application/applyPage';
